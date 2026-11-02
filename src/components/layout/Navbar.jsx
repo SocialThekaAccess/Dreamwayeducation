@@ -49,7 +49,7 @@ export default function Navbar() {
       </div>
 
       {/* Main navbar */}
-      <nav className="bg-gray-900 text-white">
+      <nav className="bg-white text-gray-900 shadow-md border-b border-gray-100">
         <div className="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
           {/* Logo */}
           <Link to="/" className="flex items-center shrink-0">
@@ -70,8 +70,8 @@ export default function Navbar() {
                   className={({ isActive }) =>
                     `flex items-center gap-1 px-3 py-2 rounded text-sm font-medium transition-colors ${
                       isActive
-                        ? "text-orange-400"
-                        : "text-gray-300 hover:text-orange-400"
+                        ? "text-orange-500"
+                        : "text-gray-700 hover:text-orange-500"
                     }`
                   }
                 >
@@ -109,7 +109,7 @@ export default function Navbar() {
 
           {/* Mobile hamburger */}
           <button
-            className="lg:hidden p-2 text-gray-300"
+            className="lg:hidden p-2 text-gray-700"
             onClick={() => setMobileOpen(!mobileOpen)}
           >
             {mobileOpen ? <X size={24} /> : <Menu size={24} />}
@@ -118,28 +118,28 @@ export default function Navbar() {
 
         {/* Mobile menu */}
         {mobileOpen && (
-          <div className="lg:hidden bg-gray-800 px-4 pb-4 border-t border-gray-700">
+          <div className="lg:hidden bg-white px-4 pb-4 border-t border-gray-200">
             {navLinks.map((link) => (
               <div key={link.path}>
                 <NavLink
                   to={link.path}
                   onClick={() => setMobileOpen(false)}
                   className={({ isActive }) =>
-                    `block py-3 border-b border-gray-700 font-medium text-sm ${
-                      isActive ? "text-orange-400" : "text-gray-300"
+                    `block py-3 border-b border-gray-100 font-medium text-sm ${
+                      isActive ? "text-orange-500" : "text-gray-700"
                     }`
                   }
                 >
                   {link.label}
                 </NavLink>
                 {link.children && (
-                  <div className="pl-4 bg-gray-900">
+                  <div className="pl-4 bg-gray-50">
                     {link.children.map((child) => (
                       <NavLink
                         key={child.path}
                         to={child.path}
                         onClick={() => setMobileOpen(false)}
-                        className="block py-2 text-sm text-gray-400 hover:text-orange-400 border-b border-gray-800"
+                        className="block py-2 text-sm text-gray-500 hover:text-orange-500 border-b border-gray-100"
                       >
                         › {child.label}
                       </NavLink>

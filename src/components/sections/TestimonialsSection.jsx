@@ -1,8 +1,9 @@
 import { Star } from "lucide-react";
 import { testimonials } from "../../data/testimonials";
+import { useEffect, useState } from "react";
 
 const stripHtml = (html) => html?.replace(/<[^>]*>/g, "").trim() || "";
-const unique = testimonials.filter((t, i, arr) => arr.findIndex((x) => x.title === t.title) === i).slice(0, 3);
+const unique = testimonials.filter((t, i, arr) => arr.findIndex((x) => x.title === t.title) === i);
 
 const fallback = [
   { id: "t1", title: "Ravi Sharma", content: "Excellent service! The team was very professional and helped me get my Canada PR approved. Highly recommended to anyone looking to settle abroad.", role: "Canada PR" },
@@ -13,6 +14,28 @@ const fallback = [
 const displayData = unique.length >= 3 ? unique : fallback;
 
 export default function TestimonialsSection() {
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentIndex((prev) => (prev + 1) % displayData.length);
+    }, 3000); // Change testimonial every 3 seconds
+
+    return () => clearInterval(interval);
+  }, []);
+
+  // Get 3 testimonials to display
+  const getVisibleTestimonials = () => {
+    const result = [];
+    for (let i = 0; i < 3; i++) {
+      const index = (currentIndex + i) % displayData.length;
+      result.push(displayData[index]);
+    }
+    return result;
+  };
+
+  const visibleTestimonials = getVisibleTestimonials();
+
   return (
     <section className="py-20 bg-gray-900 text-white">
       <div className="max-w-7xl mx-auto px-4">
@@ -25,10 +48,13 @@ export default function TestimonialsSection() {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          {displayData.map((t) => {
+          {visibleTestimonials.map((t, idx) => {
             const content = stripHtml(t.content || "");
             return (
-              <div key={t.id} className="bg-gray-800 border border-gray-700 rounded-2xl p-6">
+              <div 
+                key={`${t.id}-${currentIndex}-${idx}`} 
+                className="bg-gray-800 border border-gray-700 rounded-2xl p-6 transition-all duration-500 animate-fadeIn"
+              >
                 <div className="flex gap-1 mb-4">
                   {[...Array(5)].map((_, i) => (
                     <Star key={i} size={15} className="fill-orange-400 text-orange-400" />

@@ -4,15 +4,15 @@ import CtaBanner from "../components/sections/CtaBanner";
 const WP = "https://dreamwayeducation.com/wp-content/uploads/2023/05";
 
 const countries = [
-  { name: "Canada",         code: "ca", desc: "PR • Study • Work Permit",       img: `${WP}/cn1.png`, detail: "Canada is one of the top immigration destinations. We assist with Express Entry, PNP, Student Visa, and Work Permits." },
-  { name: "Australia",      code: "au", desc: "PR • Study • Skilled Migration",  img: `${WP}/cn2.png`, detail: "Australia offers multiple skilled migration pathways. We help with subclass 189, 190, 485, and Student visas." },
-  { name: "United Kingdom", code: "gb", desc: "Study • Work • Visit",            img: `${WP}/cn3.png`, detail: "The UK offers world-class education and work opportunities. We assist with Student, Skilled Worker, and Visitor visas." },
-  { name: "USA",            code: "us", desc: "B1/B2 • F1 Student • H1B",       img: `${WP}/cn4.png`, detail: "We assist with US Tourist (B1/B2), Student (F1), and other non-immigrant visa applications." },
-  { name: "Germany",        code: "de", desc: "Job Seeker • Study • Work",       img: `${WP}/cn5.png`, detail: "Germany's Job Seeker visa and Blue Card are popular options. We guide you through the entire process." },
-  { name: "New Zealand",    code: "nz", desc: "PR • Study • Work",              img: `${WP}/cn1.png`, detail: "New Zealand offers excellent quality of life. We assist with Skilled Migrant, Student, and Work visas." },
-  { name: "Schengen / Europe", code: "eu", desc: "Tourist • Business • Study",  img: `${WP}/cn2.png`, detail: "Planning a European trip? We assist with Schengen tourist and business visa applications." },
-  { name: "Dubai / UAE",    code: "ae", desc: "Visit • Work • Business",         img: `${WP}/cn3.png`, detail: "UAE offers great work and business opportunities. We handle tourist and employment visa applications." },
-  { name: "Singapore",      code: "sg", desc: "Visit • Work • Study",            img: `${WP}/cn4.png`, detail: "Singapore is a top Asian destination for work and education. We assist with EP, S Pass, and Student passes." },
+  { name: "Canada",         code: "ca", desc: "PR • Study • Work Permit",       img: "https://images.unsplash.com/photo-1503614472-8c93d56e92ce?w=800", detail: "Canada is one of the top immigration destinations. We assist with Express Entry, PNP, Student Visa, and Work Permits." },
+  { name: "Australia",      code: "au", desc: "PR • Study • Skilled Migration",  img: "https://images.unsplash.com/photo-1523482580672-f109ba8cb9be?w=800", detail: "Australia offers multiple skilled migration pathways. We help with subclass 189, 190, 485, and Student visas." },
+  { name: "United Kingdom", code: "gb", desc: "Study • Work • Visit",            img: "https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?w=800", detail: "The UK offers world-class education and work opportunities. We assist with Student, Skilled Worker, and Visitor visas." },
+  { name: "USA",            code: "us", desc: "B1/B2 • F1 Student • H1B",       img: "https://images.unsplash.com/photo-1485738422979-f5c462d49f74?w=800", detail: "We assist with US Tourist (B1/B2), Student (F1), and other non-immigrant visa applications." },
+  { name: "Germany",        code: "de", desc: "Job Seeker • Study • Work",       img: "https://images.unsplash.com/photo-1467269204594-9661b134dd2b?w=800", detail: "Germany's Job Seeker visa and Blue Card are popular options. We guide you through the entire process." },
+  { name: "New Zealand",    code: "nz", desc: "PR • Study • Work",              img: "https://images.unsplash.com/photo-1507699622108-4be3abd695ad?w=800", detail: "New Zealand offers excellent quality of life. We assist with Skilled Migrant, Student, and Work visas." },
+  { name: "Schengen / Europe", code: "eu", desc: "Tourist • Business • Study",  img: "https://images.unsplash.com/photo-1499856871958-5b9627545d1a?w=800", detail: "Planning a European trip? We assist with Schengen tourist and business visa applications." },
+  { name: "Dubai / UAE",    code: "ae", desc: "Visit • Work • Business",         img: "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=800", detail: "UAE offers great work and business opportunities. We handle tourist and employment visa applications." },
+  { name: "Singapore",      code: "sg", desc: "Visit • Work • Study",            img: "https://images.unsplash.com/photo-1525625293386-3f8f99389edd?w=800", detail: "Singapore is a top Asian destination for work and education. We assist with EP, S Pass, and Student passes." },
 ];
 
 export default function CountriesPage() {

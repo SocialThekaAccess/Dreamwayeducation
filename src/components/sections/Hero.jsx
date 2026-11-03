@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 import { ArrowRight, CheckCircle, Phone, Star } from "lucide-react";
-import heroImg from "../../assets/hero.png";
 
 const stats = [
   { number: "15,000+", label: "Visas Approved" },
@@ -12,12 +11,12 @@ const stats = [
 export default function Hero() {
   return (
     <section className="relative bg-gray-900 text-white overflow-hidden">
-      {/* Hero background image */}
+      {/* Hero background image - Immigration themed */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden">
         <img
-          src={heroImg}
-          alt="Hero Background"
-          className="absolute inset-0 w-full h-full object-cover opacity-30"
+          src="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?q=80&w=2000"
+          alt="Immigration Background"
+          className="absolute inset-0 w-full h-full object-cover opacity-20"
           onError={(e) => e.target.remove()}
         />
         <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-orange-500 rounded-full opacity-10 blur-3xl translate-x-1/3 -translate-y-1/4" />

@@ -120,8 +120,21 @@ export default function Hero() {
             {/* Countries strip */}
             <div className="bg-white/5 border border-white/10 rounded-2xl px-5 py-4 flex items-center gap-3 flex-wrap">
               <span className="text-gray-400 text-xs font-semibold uppercase tracking-wider shrink-0">We cover:</span>
-              {["🇨🇦 Canada","🇦🇺 Australia","🇬🇧 UK","🇺🇸 USA","🇩🇪 Germany","🇳🇿 NZ"].map((c) => (
-                <span key={c} className="text-gray-300 text-xs bg-white/10 px-2.5 py-1 rounded-full">{c}</span>
+              {[
+                { flag: "🇨🇦", name: "Canada", code: "CA" },
+                { flag: "🇦🇺", name: "Australia", code: "AU" },
+                { flag: "🇬🇧", name: "UK", code: "GB" },
+                { flag: "🇺🇸", name: "USA", code: "US" },
+                { flag: "🇩🇪", name: "Germany", code: "DE" },
+                { flag: "🇳🇿", name: "NZ", code: "NZ" }
+              ].map((country) => (
+                <span 
+                  key={country.code} 
+                  className="text-gray-300 text-sm bg-white/10 px-3 py-1.5 rounded-full flex items-center gap-1.5 hover:bg-white/20 transition-colors"
+                >
+                  <span className="text-base">{country.flag}</span>
+                  <span className="font-medium">{country.name}</span>
+                </span>
               ))}
             </div>
           </div>

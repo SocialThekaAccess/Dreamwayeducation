@@ -121,18 +121,25 @@ export default function Hero() {
             <div className="bg-white/5 border border-white/10 rounded-2xl px-5 py-4 flex items-center gap-3 flex-wrap">
               <span className="text-gray-400 text-xs font-semibold uppercase tracking-wider shrink-0">We cover:</span>
               {[
-                { flag: "🇨🇦", name: "Canada", code: "CA" },
-                { flag: "🇦🇺", name: "Australia", code: "AU" },
-                { flag: "🇬🇧", name: "UK", code: "GB" },
-                { flag: "🇺🇸", name: "USA", code: "US" },
-                { flag: "🇩🇪", name: "Germany", code: "DE" },
-                { flag: "🇳🇿", name: "NZ", code: "NZ" }
+                { flag: "CA", name: "Canada" },
+                { flag: "AU", name: "Australia" },
+                { flag: "GB", name: "UK" },
+                { flag: "US", name: "USA" },
+                { flag: "DE", name: "Germany" },
+                { flag: "NZ", name: "NZ" }
               ].map((country) => (
                 <span 
-                  key={country.code} 
-                  className="text-gray-300 text-sm bg-white/10 px-3 py-1.5 rounded-full flex items-center gap-1.5 hover:bg-white/20 transition-colors"
+                  key={country.flag} 
+                  className="text-gray-300 text-sm bg-white/10 px-3 py-1.5 rounded-full flex items-center gap-2 hover:bg-white/20 transition-colors"
                 >
-                  <span className="text-base">{country.flag}</span>
+                  <img 
+                    src={`https://flagcdn.com/16x12/${country.flag.toLowerCase()}.png`}
+                    srcSet={`https://flagcdn.com/32x24/${country.flag.toLowerCase()}.png 2x, https://flagcdn.com/48x36/${country.flag.toLowerCase()}.png 3x`}
+                    width="16"
+                    height="12"
+                    alt={country.name}
+                    className="inline-block"
+                  />
                   <span className="font-medium">{country.name}</span>
                 </span>
               ))}

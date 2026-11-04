@@ -10,7 +10,7 @@ const navLinks = [
     label: "Services",
     path: "/services",
     children: [
-      { label: "STUDdent Visa", path: "/services/service-study-abroad-chandigarh" },
+      { label: "Student Visa", path: "/services/service-study-abroad-chandigarh" },
       { label: "Scholing Visa", path: "/services/service-schooling-visa-chandigarh" },
       { label: "Visitor Visa", path: "/services/visitor-visa" },
       { label: "Tourist Visa", path: "/services/service-tourist-visa-chandigarh" },

@@ -1,65 +1,51 @@
 export const visa = [
   {
-    "id": "1005",
-    "title": "Skilled Worker Visa",
-    "slug": "skilled-worker-visa",
-    "content": "<p>There are full service engage company is to provide solution for employees needs training manage the entire HR department for companies. We offer comprehensive employment services such as assistance with employer compliance.Our company is your strategic HR partner as instead of HR.</p>\n<p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of \"de Finibus Bonorum et Malorum\" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, \"Lorem ipsum dolor sit amet..\", comes from a line in section 1.10.32.</p>\n<h3>Visa Application Whole Process</h3>\n<p>There are full service engage company is to provide solution for employees needs training manage the entire HR department for companies. We offer comprehensive employment services such as assistance with employer compliance.Our company is your strategic HR partner as instead of HR. </p>",
-    "excerpt": ""
+    "id": "1",
+    "title": "Study Visa",
+    "slug": "study-visa",
+    "content": "<p>Expert guidance for students aspiring to study abroad. We assist with university selection, application process, documentation, and visa filing to ensure a smooth journey to your dream destination.</p><h3>Why Choose Study Visa?</h3><p>Access world-class education, global exposure, and career opportunities. Our consultants help you navigate the entire process from course selection to visa approval.</p>",
+    "excerpt": "Study in top universities worldwide with expert guidance and 98% visa success rate."
   },
   {
-    "id": "1006",
-    "title": "Student/ Study Visa",
-    "slug": "student-study-visa",
-    "content": "<p>There are full service engage company is to provide solution for employees needs training manage the entire HR department for companies. We offer comprehensive employment services such as assistance with employer compliance.Our company is your strategic HR partner as instead of HR.</p>\n<p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of \"de Finibus Bonorum et Malorum\" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, \"Lorem ipsum dolor sit amet..\", comes from a line in section 1.10.32.</p>\n<h3>Visa Application Whole Process</h3>\n<p>There are full service engage company is to provide solution for employees needs training manage the entire HR department for companies. We offer comprehensive employment services such as assistance with employer compliance.Our company is your strategic HR partner as instead of HR. </p>",
-    "excerpt": ""
+    "id": "2",
+    "title": "Schooling Visa",
+    "slug": "schooling-visa",
+    "content": "<p>A Strong Start to Your Child's Global Education. We help parents secure schooling visas for their children to study in international schools abroad, ensuring proper documentation and application support.</p><h3>Benefits of Schooling Visa</h3><p>Quality education, international exposure, and holistic development for your child in renowned schools worldwide.</p>",
+    "excerpt": "Give your child a strong start with international schooling opportunities."
   },
   {
-    "id": "1007",
-    "title": "Business Work Visa",
-    "slug": "business-work-visa",
-    "content": "<p>There are full service engage company is to provide solution for employees needs training manage the entire HR department for companies. We offer comprehensive employment services such as assistance with employer compliance.Our company is your strategic HR partner as instead of HR.</p>\n<p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of \"de Finibus Bonorum et Malorum\" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, \"Lorem ipsum dolor sit amet..\", comes from a line in section 1.10.32.</p>\n<h3>Visa Application Whole Process</h3>\n<p>There are full service engage company is to provide solution for employees needs training manage the entire HR department for companies. We offer comprehensive employment services such as assistance with employer compliance.Our company is your strategic HR partner as instead of HR. </p>",
-    "excerpt": ""
+    "id": "3",
+    "title": "Visitor Visa",
+    "slug": "visitor-visa",
+    "content": "<p>Planning to visit friends or family abroad? Our visitor visa services ensure smooth processing and documentation to help you meet your loved ones without hassle.</p><h3>Visitor Visa Process</h3><p>We handle invitation letters, financial documentation, and visa application filing for countries worldwide.</p>",
+    "excerpt": "Visit your loved ones abroad with our hassle-free visitor visa services."
   },
   {
-    "id": "1701",
-    "title": "Student Visa",
-    "slug": "student-visa",
-    "content": "<p>There are full service engage company is to provide solution for employees needs training manage the entire HR department for companies. We offer comprehensive employment services such as assistance with employer compliance.Our company is your strategic HR partner as instead of HR.</p>\n<p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of \"de Finibus Bonorum et Malorum\" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, \"Lorem ipsum dolor sit amet..\", comes from a line in section 1.10.32.</p>\n<h3>Visa Application Whole Process</h3>\n<p>There are full service engage company is to provide solution for employees needs training manage the entire HR department for companies. We offer comprehensive employment services such as assistance with employer compliance.Our company is your strategic HR partner as instead of HR. </p>",
-    "excerpt": ""
+    "id": "4",
+    "title": "Tourist Visa",
+    "slug": "tourist-visa",
+    "content": "<p>Travel across the globe with ease. Our tourist visa services cover vacation planning, documentation, and visa application for popular tourist destinations worldwide.</p><h3>Why Apply Through Us?</h3><p>Fast processing, expert guidance, and high approval rates for tourist visas to USA, Canada, UK, Europe, and more.</p>",
+    "excerpt": "Explore the world with our expert tourist visa assistance and travel guidance."
   },
   {
-    "id": "1704",
-    "title": "Working Visa",
-    "slug": "working-visa",
-    "content": "<p>There are full service engage company is to provide solution for employees needs training manage the entire HR department for companies. We offer comprehensive employment services such as assistance with employer compliance.Our company is your strategic HR partner as instead of HR.</p>\n<p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of \"de Finibus Bonorum et Malorum\" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, \"Lorem ipsum dolor sit amet..\", comes from a line in section 1.10.32.</p>\n<h3>Visa Application Whole Process</h3>\n<p>There are full service engage company is to provide solution for employees needs training manage the entire HR department for companies. We offer comprehensive employment services such as assistance with employer compliance.Our company is your strategic HR partner as instead of HR. </p>",
-    "excerpt": ""
+    "id": "5",
+    "title": "Dependent Visa",
+    "slug": "dependent-visa",
+    "content": "<p>Reunite with your family abroad. Dependent visa services for spouses, children, and parents of students or working professionals settled overseas.</p><h3>Dependent Visa Benefits</h3><p>Family reunification, access to education and healthcare, and legal stay in your family member's host country.</p>",
+    "excerpt": "Bring your family together with dependent visa services for spouses and children."
   },
   {
-    "id": "1705",
-    "title": "Family Visa",
-    "slug": "family-visa",
-    "content": "<p>There are full service engage company is to provide solution for employees needs training manage the entire HR department for companies. We offer comprehensive employment services such as assistance with employer compliance.Our company is your strategic HR partner as instead of HR.</p>\n<p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of \"de Finibus Bonorum et Malorum\" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, \"Lorem ipsum dolor sit amet..\", comes from a line in section 1.10.32.</p>\n<h3>Visa Application Whole Process</h3>\n<p>There are full service engage company is to provide solution for employees needs training manage the entire HR department for companies. We offer comprehensive employment services such as assistance with employer compliance.Our company is your strategic HR partner as instead of HR. </p>",
-    "excerpt": ""
-  },
-  {
-    "id": "1716",
+    "id": "6",
     "title": "Business Visa",
     "slug": "business-visa",
-    "content": "<p>There are full service engage company is to provide solution for employees needs training manage the entire HR department for companies. We offer comprehensive employment services such as assistance with employer compliance.Our company is your strategic HR partner as instead of HR.</p>\n<p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of \"de Finibus Bonorum et Malorum\" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, \"Lorem ipsum dolor sit amet..\", comes from a line in section 1.10.32.</p>\n<h3>Visa Application Whole Process</h3>\n<p>There are full service engage company is to provide solution for employees needs training manage the entire HR department for companies. We offer comprehensive employment services such as assistance with employer compliance.Our company is your strategic HR partner as instead of HR. </p>",
-    "excerpt": ""
+    "content": "<p>Start or expand your business overseas. Our business visa services assist entrepreneurs and professionals with documentation, company registration support, and visa filing.</p><h3>Business Visa Advantages</h3><p>Access global markets, establish international presence, and explore business opportunities abroad.</p>",
+    "excerpt": "Expand your business globally with our comprehensive business visa solutions."
   },
   {
-    "id": "1717",
-    "title": "Tourists Visa",
-    "slug": "tourists-visa",
-    "content": "<p>There are full service engage company is to provide solution for employees needs training manage the entire HR department for companies. We offer comprehensive employment services such as assistance with employer compliance.Our company is your strategic HR partner as instead of HR.</p>\n<p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of \"de Finibus Bonorum et Malorum\" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, \"Lorem ipsum dolor sit amet..\", comes from a line in section 1.10.32.</p>\n<h3>Visa Application Whole Process</h3>\n<p>There are full service engage company is to provide solution for employees needs training manage the entire HR department for companies. We offer comprehensive employment services such as assistance with employer compliance.Our company is your strategic HR partner as instead of HR. </p>",
-    "excerpt": ""
-  },
-  {
-    "id": "1718",
-    "title": "Medical Visa",
-    "slug": "medical-visa",
-    "content": "There are full service engage company is to provide solution for employees needs training manage the entire HR department for companies. We offer comprehensive employment services such as assistance with employer compliance.Our company is your strategic HR partner as instead of HR.\n\nContrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of \"de Finibus Bonorum et Malorum\" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, \"Lorem ipsum dolor sit amet..\", comes from a line in section 1.10.32.\n<h3>Visa Application Whole Process</h3>\nThere are full service engage company is to provide solution for employees needs training manage the entire HR department for companies. We offer comprehensive employment services such as assistance with employer compliance.Our company is your strategic HR partner as instead of HR.",
-    "excerpt": ""
+    "id": "7",
+    "title": "PR (Permanent Residency)",
+    "slug": "permanent-residency",
+    "content": "<p>Settle in your dream country permanently. We provide end-to-end PR services including eligibility assessment, documentation, application filing, and interview preparation for Canada, Australia, and more.</p><h3>Why Choose PR?</h3><p>Permanent settlement, citizenship pathway, access to healthcare and education, and better quality of life for your family.</p>",
+    "excerpt": "Achieve permanent residency in top countries with our expert immigration services."
   }
 ];

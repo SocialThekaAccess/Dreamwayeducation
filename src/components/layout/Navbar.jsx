@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { Menu, X, ChevronDown, Mail, MapPin } from "lucide-react";
 import logo from "../../assets/images/DreamWaylogo.webp";
@@ -31,6 +31,15 @@ export default function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false);
   const [openDropdown, setOpenDropdown] = useState(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
+
+  // Auto-open modal after 4 seconds on page load
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsModalOpen(true);
+    }, 4000); // 4 seconds
+
+    return () => clearTimeout(timer);
+  }, []);
 
   return (
     <header className="sticky top-0 z-50">
@@ -101,12 +110,12 @@ export default function Navbar() {
           </ul>
 
           {/* CTA */}
-          <button
-            onClick={() => setIsModalOpen(true)}
+          <Link
+            to="/contact"
             className="hidden lg:flex items-center gap-2 bg-orange-500 hover:bg-orange-600 text-white font-bold text-sm px-5 py-2.5 rounded-lg transition-colors"
           >
             Book Free Consultant »
-          </button>
+          </Link>
 
           {/* Mobile hamburger */}
           <button
@@ -149,20 +158,18 @@ export default function Navbar() {
                 )}
               </div>
             ))}
-            <button
-              onClick={() => {
-                setIsModalOpen(true);
-                setMobileOpen(false);
-              }}
+            <Link
+              to="/contact"
+              onClick={() => setMobileOpen(false)}
               className="btn-primary block text-center mt-4 text-sm justify-center w-full"
             >
               Book Free Consultant
-            </button>
+            </Link>
           </div>
         )}
       </nav>
 
-      {/* Contact Form Modal */}
+      {/* Contact Form Modal - Auto opens after 4 seconds */}
       <ContactFormModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
     </header>
   );

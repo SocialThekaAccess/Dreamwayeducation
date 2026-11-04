@@ -12,13 +12,13 @@ const quickLinks = [
 ];
 
 const serviceLinks = [
-  { label: "Business Visa",         path: "/services/service-business-visa-chandigarh" },
   { label: "Study Visa",            path: "/services/service-study-abroad-chandigarh" },
   { label: "Schooling Visa",        path: "/services/service-schooling-visa-chandigarh" },
-  { label: "Permanent Residency (PR)", path: "/services/service-permanent-residency-pr-chandigarh" },
+  { label: "Visitor Visa",          path: "/services/visitor-visa" },
   { label: "Tourist Visa",          path: "/services/service-tourist-visa-chandigarh" },
   { label: "Dependent Visa",        path: "/services/dependent-visa" },
-  { label: "Education Loan",        path: "/services/education-loan" },
+  { label: "Business Visa",         path: "/services/service-business-visa-chandigarh" },
+  { label: "PR (Permanent Residency)", path: "/services/service-permanent-residency-pr-chandigarh" },
 ];
 
 export default function Footer() {

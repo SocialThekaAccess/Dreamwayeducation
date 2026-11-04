@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { Menu, X, ChevronDown, Mail, MapPin } from "lucide-react";
 import logo from "../../assets/images/DreamWaylogo.webp";
+import ContactFormModal from "../modals/ContactFormModal";
 
 const navLinks = [
   { label: "Home", path: "/" },
@@ -29,6 +30,7 @@ const navLinks = [
 export default function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false);
   const [openDropdown, setOpenDropdown] = useState(null);
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
   return (
     <header className="sticky top-0 z-50">
@@ -99,12 +101,12 @@ export default function Navbar() {
           </ul>
 
           {/* CTA */}
-          <Link
-            to="/contact"
+          <button
+            onClick={() => setIsModalOpen(true)}
             className="hidden lg:flex items-center gap-2 bg-orange-500 hover:bg-orange-600 text-white font-bold text-sm px-5 py-2.5 rounded-lg transition-colors"
           >
             Book Free Consultant »
-          </Link>
+          </button>
 
           {/* Mobile hamburger */}
           <button
@@ -147,16 +149,21 @@ export default function Navbar() {
                 )}
               </div>
             ))}
-            <Link
-              to="/contact"
-              onClick={() => setMobileOpen(false)}
-              className="btn-primary block text-center mt-4 text-sm justify-center"
+            <button
+              onClick={() => {
+                setIsModalOpen(true);
+                setMobileOpen(false);
+              }}
+              className="btn-primary block text-center mt-4 text-sm justify-center w-full"
             >
               Book Free Consultant
-            </Link>
+            </button>
           </div>
         )}
       </nav>
+
+      {/* Contact Form Modal */}
+      <ContactFormModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
     </header>
   );
 }

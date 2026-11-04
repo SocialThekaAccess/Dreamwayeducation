@@ -14,6 +14,8 @@ const navLinks = [
       { label: "Scholing Visa", path: "/services/service-schooling-visa-chandigarh" },
       { label: "Visitor Visa", path: "/services/visitor-visa" },
       { label: "Tourist Visa", path: "/services/service-tourist-visa-chandigarh" },
+      { label: "Dependent Visa", path: "/services/dependent-visa" },
+      { label: "PR", path: "/services/service-permanent-residency-pr-chandigarh" },
     ],
   },
   { label: "Visa", path: "/visa" },

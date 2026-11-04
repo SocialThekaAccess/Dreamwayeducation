@@ -20,12 +20,11 @@ export default function AboutPage() {
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4">
           <div className="grid lg:grid-cols-2 gap-14 items-center mb-20">
-            <div>
+            <div className="space-y-6">
               <img
-                src="https://dreamwayeducation.com/wp-content/uploads/2023/06/about.jpg"
-                alt="About Dreamway"
+                src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=600&h=400&fit=crop"
+                alt="About Dreamway Education"
                 className="rounded-2xl shadow-xl w-full h-80 object-cover"
-                onError={(e) => { e.target.src="https://dreamwayeducation.com/wp-content/uploads/2023/05/ab1.jpg"; }}
               />
             </div>
             <div>

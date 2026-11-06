@@ -32,14 +32,38 @@ const contactInfo = [
 ];
 
 export default function ContactPage() {
-  const [form, setForm] = useState({ name: "", email: "", phone: "", service: "", message: "" });
   const [submitted, setSubmitted] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [error, setError] = useState("");
 
-  const handleChange = (e) => setForm({ ...form, [e.target.name]: e.target.value });
-
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    setSubmitted(true);
+    setIsSubmitting(true);
+    setError("");
+
+    const formData = new FormData(e.target);
+    formData.append("access_key", "35955d3c-cf39-457c-8cd2-89eab5df6bac");
+    formData.append("subject", "New Contact Form Submission - Dreamway Education");
+    formData.append("from_name", "Dreamway Education Website");
+
+    try {
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        body: formData,
+      });
+      const data = await response.json();
+
+      if (data.success) {
+        setSubmitted(true);
+        e.target.reset();
+      } else {
+        setError("Something went wrong. Please try again.");
+      }
+    } catch {
+      setError("Network error. Please check your connection and try again.");
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -97,7 +121,7 @@ export default function ContactPage() {
                     <div>
                       <label className="block text-sm font-semibold text-gray-700 mb-1.5">Full Name *</label>
                       <input
-                        name="name" value={form.name} onChange={handleChange} required
+                        name="name" required
                         placeholder="Your full name"
                         className="w-full border border-gray-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-orange-400 transition-colors"
                       />
@@ -105,7 +129,7 @@ export default function ContactPage() {
                     <div>
                       <label className="block text-sm font-semibold text-gray-700 mb-1.5">Phone Number *</label>
                       <input
-                        name="phone" value={form.phone} onChange={handleChange} required
+                        name="phone" required
                         placeholder="+91 XXXXX XXXXX"
                         className="w-full border border-gray-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-orange-400 transition-colors"
                       />
@@ -114,7 +138,7 @@ export default function ContactPage() {
                   <div>
                     <label className="block text-sm font-semibold text-gray-700 mb-1.5">Email Address *</label>
                     <input
-                      name="email" type="email" value={form.email} onChange={handleChange} required
+                      name="email" type="email" required
                       placeholder="your@email.com"
                       className="w-full border border-gray-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-orange-400 transition-colors"
                     />
@@ -122,10 +146,11 @@ export default function ContactPage() {
                   <div>
                     <label className="block text-sm font-semibold text-gray-700 mb-1.5">Service Interested In</label>
                     <select
-                      name="service" value={form.service} onChange={handleChange}
+                      name="service"
+                      defaultValue=""
                       className="w-full border border-gray-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-orange-400 transition-colors bg-white"
                     >
-                      <option value="">Select a service...</option>
+                      <option value="" disabled>Select a service...</option>
                       <option>Study Visa</option>
                       <option>Tourist Visa</option>
                       <option>Business Visa</option>
@@ -139,13 +164,20 @@ export default function ContactPage() {
                   <div>
                     <label className="block text-sm font-semibold text-gray-700 mb-1.5">Message</label>
                     <textarea
-                      name="message" value={form.message} onChange={handleChange} rows={4}
+                      name="message" rows={4}
                       placeholder="Tell us about your requirements..."
                       className="w-full border border-gray-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-orange-400 transition-colors resize-none"
                     />
                   </div>
-                  <button type="submit" className="btn-primary w-full justify-center py-4 text-base">
-                    <Send size={18} /> Send Message
+                  {error && (
+                    <p className="text-red-500 text-sm text-center">{error}</p>
+                  )}
+                  <button
+                    type="submit"
+                    disabled={isSubmitting}
+                    className="btn-primary w-full justify-center py-4 text-base disabled:opacity-60 disabled:cursor-not-allowed"
+                  >
+                    <Send size={18} /> {isSubmitting ? "Sending..." : "Send Message"}
                   </button>
                 </form>
               )}

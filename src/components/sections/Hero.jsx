@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { ArrowRight, CheckCircle, Phone, Star } from "lucide-react";
+import { seoData } from "../../data/seoData";
 
 const stats = [
   { number: "15,000+", label: "Visas Approved" },
@@ -44,9 +45,7 @@ export default function Hero() {
             </div>
 
             <h1 className="text-5xl md:text-6xl font-black leading-[1.1] mb-6">
-              Your Trusted <br />
-              <span className="text-orange-500">Immigration</span><br />
-              Partner
+              {seoData.home.h1}
             </h1>
 
             <p className="text-gray-400 text-lg leading-relaxed mb-8 max-w-lg">

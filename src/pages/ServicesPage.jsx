@@ -1,3 +1,5 @@
+import { Helmet } from "react-helmet-async";
+import { seoData } from "../data/seoData";
 import { Link } from "react-router-dom";
 import { ArrowRight, GraduationCap, Plane, Home, Briefcase, BookOpen, Heart, FileText, CreditCard, Globe, Users, Award } from "lucide-react";
 import { services } from "../data/services";
@@ -24,11 +26,15 @@ const iconMap = {
 export default function ServicesPage() {
   return (
     <>
+      <Helmet>
+        <title>{seoData.services.title}</title>
+        <meta name="description" content={seoData.services.description} />
+      </Helmet>
       {/* Hero */}
       <section className="bg-gray-900 text-white py-16">
         <div className="max-w-7xl mx-auto px-4 text-center">
           <span className="text-orange-400 text-sm font-semibold uppercase tracking-widest">What We Offer</span>
-          <h1 className="text-4xl md:text-5xl font-black mt-3 mb-4">Our Immigration Services</h1>
+          <h1 className="text-4xl md:text-5xl font-black mt-3 mb-4">{seoData.services.h1}</h1>
           <p className="text-gray-400 text-lg max-w-2xl mx-auto">
             Comprehensive visa and immigration services tailored to your needs — from student visas to permanent residency.
           </p>

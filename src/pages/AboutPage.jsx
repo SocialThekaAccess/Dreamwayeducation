@@ -1,3 +1,5 @@
+import { Helmet } from "react-helmet-async";
+import { seoData } from "../data/seoData";
 import { Link } from "react-router-dom";
 import { CheckCircle } from "lucide-react";
 import CtaBanner from "../components/sections/CtaBanner";
@@ -5,11 +7,15 @@ import CtaBanner from "../components/sections/CtaBanner";
 export default function AboutPage() {
   return (
     <>
+      <Helmet>
+        <title>{seoData.about.title}</title>
+        <meta name="description" content={seoData.about.description} />
+      </Helmet>
       {/* Hero */}
       <section className="bg-gray-900 text-white py-16">
         <div className="max-w-7xl mx-auto px-4 text-center">
           <span className="text-orange-400 text-sm font-semibold uppercase tracking-widest">Who We Are</span>
-          <h1 className="text-4xl md:text-5xl font-black mt-3 mb-4">About Dreamway Education</h1>
+          <h1 className="text-4xl md:text-5xl font-black mt-3 mb-4">{seoData.about.h1}</h1>
           <p className="text-gray-400 text-lg max-w-2xl mx-auto">
             Your trusted immigration partner in Chandigarh — helping thousands settle abroad since 2012.
           </p>

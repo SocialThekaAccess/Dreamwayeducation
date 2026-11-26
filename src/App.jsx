@@ -1,4 +1,5 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HelmetProvider } from "react-helmet-async";
 import Layout from "./components/layout/Layout";
 
 // Pages
@@ -16,23 +17,25 @@ import NotFoundPage      from "./pages/NotFoundPage";
 
 export default function App() {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route element={<Layout />}>
-          <Route path="/"               element={<HomePage />} />
-          <Route path="/about"          element={<AboutPage />} />
-          <Route path="/services"       element={<ServicesPage />} />
-          <Route path="/services/:slug" element={<ServiceDetailPage />} />
-          <Route path="/visa"           element={<VisaPage />} />
-          <Route path="/visa/:slug"     element={<VisaPage />} />
-          <Route path="/countries"      element={<CountriesPage />} />
-          <Route path="/testimonials"   element={<TestimonialsPage />} />
-          <Route path="/faq"            element={<FaqPage />} />
-          <Route path="/jobs"           element={<JobsPage />} />
-          <Route path="/contact"        element={<ContactPage />} />
-          <Route path="*"              element={<NotFoundPage />} />
-        </Route>
-      </Routes>
-    </BrowserRouter>
+    <HelmetProvider>
+      <BrowserRouter>
+        <Routes>
+          <Route element={<Layout />}>
+            <Route path="/"               element={<HomePage />} />
+            <Route path="/about"          element={<AboutPage />} />
+            <Route path="/services"       element={<ServicesPage />} />
+            <Route path="/services/:slug" element={<ServiceDetailPage />} />
+            <Route path="/visa"           element={<VisaPage />} />
+            <Route path="/visa/:slug"     element={<VisaPage />} />
+            <Route path="/countries"      element={<CountriesPage />} />
+            <Route path="/testimonials"   element={<TestimonialsPage />} />
+            <Route path="/faq"            element={<FaqPage />} />
+            <Route path="/jobs"           element={<JobsPage />} />
+            <Route path="/contact"        element={<ContactPage />} />
+            <Route path="*"              element={<NotFoundPage />} />
+          </Route>
+        </Routes>
+      </BrowserRouter>
+    </HelmetProvider>
   );
 }

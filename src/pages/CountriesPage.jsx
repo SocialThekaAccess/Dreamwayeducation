@@ -1,3 +1,5 @@
+import { Helmet } from "react-helmet-async";
+import { seoData } from "../data/seoData";
 import { Link } from "react-router-dom";
 import CtaBanner from "../components/sections/CtaBanner";
 
@@ -18,10 +20,14 @@ const countries = [
 export default function CountriesPage() {
   return (
     <>
+      <Helmet>
+        <title>{seoData.countries.title}</title>
+        <meta name="description" content={seoData.countries.description} />
+      </Helmet>
       <section className="bg-gray-900 text-white py-16">
         <div className="max-w-7xl mx-auto px-4 text-center">
           <span className="text-orange-400 text-sm font-semibold uppercase tracking-widest">Destinations</span>
-          <h1 className="text-4xl md:text-5xl font-black mt-3 mb-4">Countries We Cover</h1>
+          <h1 className="text-4xl md:text-5xl font-black mt-3 mb-4">{seoData.countries.h1}</h1>
           <p className="text-gray-400 text-lg max-w-xl mx-auto">
             Expert visa and immigration services for all major destinations worldwide.
           </p>

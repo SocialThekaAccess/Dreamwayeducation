@@ -1,3 +1,5 @@
+import { Helmet } from "react-helmet-async";
+import { seoData } from "../data/seoData";
 import { Star } from "lucide-react";
 import { testimonials } from "../data/testimonials";
 import CtaBanner from "../components/sections/CtaBanner";
@@ -19,10 +21,14 @@ const displayData = unique.length >= 4 ? unique : fallback;
 export default function TestimonialsPage() {
   return (
     <>
+      <Helmet>
+        <title>{seoData.testimonials.title}</title>
+        <meta name="description" content={seoData.testimonials.description} />
+      </Helmet>
       <section className="bg-gray-900 text-white py-16">
         <div className="max-w-7xl mx-auto px-4 text-center">
           <span className="text-orange-400 text-sm font-semibold uppercase tracking-widest">Reviews</span>
-          <h1 className="text-4xl md:text-5xl font-black mt-3 mb-4">Client Testimonials</h1>
+          <h1 className="text-4xl md:text-5xl font-black mt-3 mb-4">{seoData.testimonials.h1}</h1>
           <p className="text-gray-400 text-lg max-w-xl mx-auto">
             Real stories from real clients who achieved their immigration dreams with Dreamway.
           </p>

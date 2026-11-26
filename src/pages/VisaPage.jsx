@@ -1,3 +1,5 @@
+import { Helmet } from "react-helmet-async";
+import { seoData } from "../data/seoData";
 import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
 import { visa } from "../data/visa";
@@ -18,10 +20,14 @@ const stripHtml = (html) => html?.replace(/<[^>]*>/g, "").slice(0, 90) || "";
 export default function VisaPage() {
   return (
     <>
+      <Helmet>
+        <title>{seoData.visa.title}</title>
+        <meta name="description" content={seoData.visa.description} />
+      </Helmet>
       <section className="bg-gray-900 text-white py-16">
         <div className="max-w-7xl mx-auto px-4 text-center">
           <span className="text-orange-400 text-sm font-semibold uppercase tracking-widest">Immigration Services</span>
-          <h1 className="text-4xl md:text-5xl font-black mt-3 mb-4">Visa Types</h1>
+          <h1 className="text-4xl md:text-5xl font-black mt-3 mb-4">{seoData.visa.h1}</h1>
           <p className="text-gray-400 text-lg max-w-xl mx-auto">
             Explore all visa categories we handle — from student visas to work permits and permanent residency.
           </p>

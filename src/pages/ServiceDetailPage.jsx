@@ -1,4 +1,6 @@
 import { useParams, Link } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
+import { seoData } from "../data/seoData";
 import { ArrowRight, CheckCircle, Phone, ChevronDown, ChevronUp } from "lucide-react";
 import { useState } from "react";
 import { services } from "../data/services";
@@ -10,6 +12,7 @@ export default function ServiceDetailPage() {
   const service = services.find((s) => s.slug === slug);
   const content = serviceContent[slug];
   const [openFaq, setOpenFaq] = useState(null);
+  const seo = seoData.serviceDetails[slug] || {};
 
   if (!service) {
     return (
@@ -26,6 +29,10 @@ export default function ServiceDetailPage() {
 
   return (
     <>
+      <Helmet>
+        <title>{seo.title || service.title}</title>
+        <meta name="description" content={seo.description || content?.tagline || service.excerpt} />
+      </Helmet>
       {/* Hero Banner */}
       <section className="bg-gray-900 text-white py-16">
         <div className="max-w-7xl mx-auto px-4">
@@ -36,7 +43,7 @@ export default function ServiceDetailPage() {
             <span>›</span>
             <span className="text-orange-400">{service.title}</span>
           </div>
-          <h1 className="text-4xl md:text-5xl font-black mb-3">{service.title}</h1>
+          <h1 className="text-4xl md:text-5xl font-black mb-3">{seo.h1 || service.title}</h1>
           {content?.tagline && (
             <p className="text-orange-400 text-lg font-medium">{content.tagline}</p>
           )}

@@ -32,6 +32,7 @@ export default function ServiceDetailPage() {
       <Helmet>
         <title>{seo.title || service.title}</title>
         <meta name="description" content={seo.description || content?.tagline || service.excerpt} />
+        <link rel="canonical" href={seo.canonical || `https://dreamwayeducation.com/services/${slug}`} />
       </Helmet>
       {/* Hero Banner */}
       <section className="bg-gray-900 text-white py-16">

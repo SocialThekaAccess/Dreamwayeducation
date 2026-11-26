@@ -23,6 +23,7 @@ export default function CountriesPage() {
       <Helmet>
         <title>{seoData.countries.title}</title>
         <meta name="description" content={seoData.countries.description} />
+        <link rel="canonical" href={seoData.countries.canonical} />
       </Helmet>
       <section className="bg-gray-900 text-white py-16">
         <div className="max-w-7xl mx-auto px-4 text-center">

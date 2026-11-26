@@ -10,6 +10,7 @@ export default function AboutPage() {
       <Helmet>
         <title>{seoData.about.title}</title>
         <meta name="description" content={seoData.about.description} />
+        <link rel="canonical" href={seoData.about.canonical} />
       </Helmet>
       {/* Hero */}
       <section className="bg-gray-900 text-white py-16">

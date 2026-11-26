@@ -29,6 +29,7 @@ export default function ServicesPage() {
       <Helmet>
         <title>{seoData.services.title}</title>
         <meta name="description" content={seoData.services.description} />
+        <link rel="canonical" href={seoData.services.canonical} />
       </Helmet>
       {/* Hero */}
       <section className="bg-gray-900 text-white py-16">

@@ -14,6 +14,7 @@ export default function HomePage() {
       <Helmet>
         <title>{seoData.home.title}</title>
         <meta name="description" content={seoData.home.description} />
+        <link rel="canonical" href={seoData.home.canonical} />
       </Helmet>
       <Hero />
       <ServicesSection />

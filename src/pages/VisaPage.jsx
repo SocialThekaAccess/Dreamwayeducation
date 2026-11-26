@@ -23,6 +23,7 @@ export default function VisaPage() {
       <Helmet>
         <title>{seoData.visa.title}</title>
         <meta name="description" content={seoData.visa.description} />
+        <link rel="canonical" href={seoData.visa.canonical} />
       </Helmet>
       <section className="bg-gray-900 text-white py-16">
         <div className="max-w-7xl mx-auto px-4 text-center">

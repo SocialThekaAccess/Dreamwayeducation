@@ -25,6 +25,10 @@ export default function TestimonialsPage() {
         <title>{seoData.testimonials.title}</title>
         <meta name="description" content={seoData.testimonials.description} />
         <link rel="canonical" href={seoData.testimonials.canonical} />
+        <meta property="og:title" content={seoData.testimonials.title} />
+        <meta property="og:description" content={seoData.testimonials.description} />
+        <meta property="og:url" content={seoData.testimonials.canonical} />
+        <meta property="og:type" content="website" />
       </Helmet>
       <section className="bg-gray-900 text-white py-16">
         <div className="max-w-7xl mx-auto px-4 text-center">

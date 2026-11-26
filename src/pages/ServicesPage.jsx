@@ -30,6 +30,10 @@ export default function ServicesPage() {
         <title>{seoData.services.title}</title>
         <meta name="description" content={seoData.services.description} />
         <link rel="canonical" href={seoData.services.canonical} />
+        <meta property="og:title" content={seoData.services.title} />
+        <meta property="og:description" content={seoData.services.description} />
+        <meta property="og:url" content={seoData.services.canonical} />
+        <meta property="og:type" content="website" />
       </Helmet>
       {/* Hero */}
       <section className="bg-gray-900 text-white py-16">

@@ -15,6 +15,10 @@ export default function HomePage() {
         <title>{seoData.home.title}</title>
         <meta name="description" content={seoData.home.description} />
         <link rel="canonical" href={seoData.home.canonical} />
+        <meta property="og:title" content={seoData.home.title} />
+        <meta property="og:description" content={seoData.home.description} />
+        <meta property="og:url" content={seoData.home.canonical} />
+        <meta property="og:type" content="website" />
       </Helmet>
       <Hero />
       <ServicesSection />

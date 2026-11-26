@@ -24,6 +24,10 @@ export default function VisaPage() {
         <title>{seoData.visa.title}</title>
         <meta name="description" content={seoData.visa.description} />
         <link rel="canonical" href={seoData.visa.canonical} />
+        <meta property="og:title" content={seoData.visa.title} />
+        <meta property="og:description" content={seoData.visa.description} />
+        <meta property="og:url" content={seoData.visa.canonical} />
+        <meta property="og:type" content="website" />
       </Helmet>
       <section className="bg-gray-900 text-white py-16">
         <div className="max-w-7xl mx-auto px-4 text-center">

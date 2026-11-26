@@ -24,6 +24,10 @@ export default function CountriesPage() {
         <title>{seoData.countries.title}</title>
         <meta name="description" content={seoData.countries.description} />
         <link rel="canonical" href={seoData.countries.canonical} />
+        <meta property="og:title" content={seoData.countries.title} />
+        <meta property="og:description" content={seoData.countries.description} />
+        <meta property="og:url" content={seoData.countries.canonical} />
+        <meta property="og:type" content="website" />
       </Helmet>
       <section className="bg-gray-900 text-white py-16">
         <div className="max-w-7xl mx-auto px-4 text-center">

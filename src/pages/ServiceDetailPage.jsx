@@ -33,6 +33,10 @@ export default function ServiceDetailPage() {
         <title>{seo.title || service.title}</title>
         <meta name="description" content={seo.description || content?.tagline || service.excerpt} />
         <link rel="canonical" href={seo.canonical || `https://dreamwayeducation.com/services/${slug}`} />
+        <meta property="og:title" content={seo.title || service.title} />
+        <meta property="og:description" content={seo.description || content?.tagline || service.excerpt} />
+        <meta property="og:url" content={seo.canonical || `https://dreamwayeducation.com/services/${slug}`} />
+        <meta property="og:type" content="article" />
       </Helmet>
       {/* Hero Banner */}
       <section className="bg-gray-900 text-white py-16">

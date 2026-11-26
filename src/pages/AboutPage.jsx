@@ -11,6 +11,10 @@ export default function AboutPage() {
         <title>{seoData.about.title}</title>
         <meta name="description" content={seoData.about.description} />
         <link rel="canonical" href={seoData.about.canonical} />
+        <meta property="og:title" content={seoData.about.title} />
+        <meta property="og:description" content={seoData.about.description} />
+        <meta property="og:url" content={seoData.about.canonical} />
+        <meta property="og:type" content="website" />
       </Helmet>
       {/* Hero */}
       <section className="bg-gray-900 text-white py-16">

@@ -4,6 +4,7 @@ import { services } from "../../data/services";
 
 // Reliable Unsplash images — no dependency on external/WP servers
 const serviceImages = {
+  "visitor-visa":                               "https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=600&h=400&fit=crop",
   "service-study-abroad-chandigarh":            "https://images.unsplash.com/photo-1541339907198-e08756dedf3f?w=600&h=400&fit=crop",
   "service-schooling-visa-chandigarh":          "https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?w=600&h=400&fit=crop",
   "service-permanent-residency-pr-chandigarh":  "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&h=400&fit=crop",
@@ -20,6 +21,7 @@ const serviceImages = {
 };
 
 const serviceConfig = {
+  "visitor-visa":                              Plane,
   "service-study-abroad-chandigarh":           GraduationCap,
   "service-schooling-visa-chandigarh":         BookOpen,
   "service-permanent-residency-pr-chandigarh": Home,

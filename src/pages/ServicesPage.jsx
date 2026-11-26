@@ -5,6 +5,7 @@ import { serviceContent } from "../data/serviceContent";
 import CtaBanner from "../components/sections/CtaBanner";
 
 const iconMap = {
+  "visitor-visa":                              Plane,
   "service-study-abroad-chandigarh":           GraduationCap,
   "service-schooling-visa-chandigarh":         BookOpen,
   "service-permanent-residency-pr-chandigarh": Home,

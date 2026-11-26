@@ -1,5 +1,13 @@
 export const services = [
   {
+    "id": "visitor-visa-001",
+    "title": "Visitor Visa",
+    "slug": "visitor-visa",
+    "content": "Visit friends, family or explore new countries with ease",
+    "excerpt": "Professional assistance for visitor visa applications worldwide",
+    "order": "0"
+  },
+  {
     "id": "416",
     "title": "Study Visa",
     "slug": "service-study-abroad-chandigarh",

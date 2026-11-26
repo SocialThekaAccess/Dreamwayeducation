@@ -1,6 +1,37 @@
 // Rich professional content for each service detail page
 export const serviceContent = {
 
+  "visitor-visa": {
+    tagline: "Visit Your Loved Ones or Explore New Destinations",
+    description:
+      "Whether you're planning to visit family, attend an event, or explore a new country, DreamWay Education makes your visitor visa application seamless. We handle all documentation, application filing, and interview preparation.",
+    image: "https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=900&h=550&fit=crop",
+    benefits: [
+      "Expert guidance for visitor/tourist visa applications",
+      "Complete documentation assistance",
+      "High success rate with visa approvals",
+      "Interview preparation and mock sessions",
+      "Fast-track processing when needed",
+      "Support for visa extension applications",
+      "Assistance for multiple-entry visas",
+    ],
+    steps: [
+      { title: "Initial Consultation", desc: "We understand your travel purpose, destination, and timeline to recommend the best visa type." },
+      { title: "Document Checklist", desc: "We provide a comprehensive checklist of required documents including invitation letters, financial proofs, and travel itinerary." },
+      { title: "Application Form Filling", desc: "Our team accurately fills out all visa application forms to avoid rejections." },
+      { title: "Document Verification", desc: "We verify all documents for authenticity and completeness before submission." },
+      { title: "Visa Application Submission", desc: "We submit your application to the embassy/consulate and track its progress." },
+      { title: "Interview Preparation", desc: "If required, we conduct mock interview sessions to boost your confidence and success rate." },
+    ],
+    faqs: [
+      { q: "What is a Visitor Visa?", a: "A visitor visa allows you to temporarily visit a country for tourism, family visits, or attending events. Duration varies from country to country." },
+      { q: "How long does visitor visa processing take?", a: "Processing time ranges from 2-8 weeks depending on the destination country and application volume." },
+      { q: "Can I extend my visitor visa?", a: "Yes, most countries allow visa extensions if you have valid reasons. We assist with extension applications." },
+      { q: "What documents are required?", a: "Common documents include valid passport, photographs, financial proof, travel itinerary, invitation letter (if applicable), and visa application form." },
+      { q: "What is the difference between tourist and visitor visa?", a: "Terms vary by country, but generally visitor visas cover family visits while tourist visas are for leisure travel. Some countries use them interchangeably." },
+    ],
+  },
+
   "service-study-abroad-chandigarh": {
     tagline: "Your Gateway to World-Class Education",
     description:
